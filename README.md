@@ -1,6 +1,4 @@
-# tdd-lab1
-
-Пример лабораторной работы по TDD на Python + FastAPI.
+# TDD-lab1
 
 ## Предметная область
 Task Tracker API (управление задачами):
