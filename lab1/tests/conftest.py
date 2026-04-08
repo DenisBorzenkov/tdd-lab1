@@ -1,8 +1,8 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from app.main import _tasks, app
-import app.main as main_module
+from lab1.app.main import _tasks, app
+import lab1.app.main as main_module
 
 
 @pytest.fixture
