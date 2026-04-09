@@ -14,19 +14,19 @@
 
 **Ответ:** `crew = "4"`
 
-![starships Millennium Falcon](p1_starships_millennium_falcon.png)
+![starships Millennium Falcon](p1_collection_starships_millennium_falcon.png)
 
 ### 1.3. people — name=Darth Vader, eye_color=?
 
 **Ответ:** `eye_color = "yellow"`
 
-![people Darth Vader](p1_people_darth_vader.png)
+![people Darth Vader](p1_collection_people_darth_vader.png)
 
 ### 1.4. planets — name=Naboo, terrain=?
 
 **Ответ:** `terrain = "grassy hills, swamps, forests, mountains"`
 
-![planets Naboo](p1_planets_naboo.png)
+![planets Naboo](p1_collection_planets_naboo.png)
 
 ---
 
