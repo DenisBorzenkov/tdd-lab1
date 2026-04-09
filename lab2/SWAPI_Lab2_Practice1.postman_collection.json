@@ -1,0 +1,84 @@
+{
+	"info": {
+		"name": "SWAPI Lab2 - Практика 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Species - Droid (average_lifespan)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/species/?search=droid",
+					"protocol": "https",
+					"host": ["swapi", "dev"],
+					"path": ["api", "species", ""],
+					"query": [
+						{
+							"key": "search",
+							"value": "droid"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Starships - Millennium Falcon (crew)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/starships/?search=Millennium Falcon",
+					"protocol": "https",
+					"host": ["swapi", "dev"],
+					"path": ["api", "starships", ""],
+					"query": [
+						{
+							"key": "search",
+							"value": "Millennium Falcon"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "People - Darth Vader (eye_color)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/?search=Darth Vader",
+					"protocol": "https",
+					"host": ["swapi", "dev"],
+					"path": ["api", "people", ""],
+					"query": [
+						{
+							"key": "search",
+							"value": "Darth Vader"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Planets - Naboo (terrain)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/planets/?search=Naboo",
+					"protocol": "https",
+					"host": ["swapi", "dev"],
+					"path": ["api", "planets", ""],
+					"query": [
+						{
+							"key": "search",
+							"value": "Naboo"
+						}
+					]
+				}
+			}
+		}
+	]
+}
