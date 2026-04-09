@@ -8,7 +8,7 @@
 
 **Ответ:** `average_lifespan = "indefinite"`
 
-![species droid](p1_species_droid.png)
+![species droid](p1_collection_species_droid.png)
 
 ### 1.2. starships — name=Millennium Falcon, crew=?
 
