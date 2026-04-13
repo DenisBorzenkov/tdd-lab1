@@ -54,7 +54,7 @@
 
 На скриншоте видны: метод (GET), адрес, параметры запроса (search=Star Destroyer), статус-код (200 OK) и body ответа.
 
-![search Star Destroyer](p3_search_star_destroyer.png)
+![search Star Destroyer](p3_search_star_destroyer1.png)
 
 ---
 
