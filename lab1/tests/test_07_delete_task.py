@@ -22,8 +22,8 @@ def test_deleted_task_is_unavailable(client):
 
 
 def test_delete_reduces_list_count(client):
-    client.post('/tasks', json={'title': 'A'})
-    client.post('/tasks', json={'title': 'B'})
+    client.post('/tasks', json={'title': 'AAA'})
+    client.post('/tasks', json={'title': 'BBB'})
 
     client.delete('/tasks/1')
     response = client.get('/tasks')

@@ -45,7 +45,7 @@ def test_update_task_due_date_success(client):
 
 
 def test_update_task_not_found(client):
-    response = client.put('/tasks/99', json={'title': 'X'})
+    response = client.put('/tasks/99', json={'title': 'XXX'})
 
     assert response.status_code == 404
 

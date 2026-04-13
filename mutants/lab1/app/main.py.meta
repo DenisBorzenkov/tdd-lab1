@@ -1,0 +1,24 @@
+{
+    "exit_code_by_key": {
+        "lab1.app.main.x__title_exists__mutmut_1": null,
+        "lab1.app.main.x__title_exists__mutmut_2": null,
+        "lab1.app.main.x__title_exists__mutmut_3": null,
+        "lab1.app.main.x__title_exists__mutmut_4": null,
+        "lab1.app.main.x__title_exists__mutmut_5": null,
+        "lab1.app.main.x__title_exists__mutmut_6": null,
+        "lab1.app.main.x__title_exists__mutmut_7": null,
+        "lab1.app.main.x__title_exists__mutmut_8": null,
+        "lab1.app.main.x__validate_due_date__mutmut_1": null,
+        "lab1.app.main.x__validate_due_date__mutmut_2": null,
+        "lab1.app.main.x__validate_due_date__mutmut_3": null,
+        "lab1.app.main.x__validate_due_date__mutmut_4": null,
+        "lab1.app.main.x__validate_due_date__mutmut_5": null,
+        "lab1.app.main.x__validate_due_date__mutmut_6": null,
+        "lab1.app.main.x__validate_due_date__mutmut_7": null,
+        "lab1.app.main.x__validate_due_date__mutmut_8": null,
+        "lab1.app.main.x__validate_due_date__mutmut_9": null
+    },
+    "durations_by_key": {},
+    "type_check_error_by_key": {},
+    "estimated_durations_by_key": {}
+}

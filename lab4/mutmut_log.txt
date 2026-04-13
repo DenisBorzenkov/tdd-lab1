@@ -1,0 +1,264 @@
+======================================================================
+ОТЧЁТ МУТАЦИОННОГО ТЕСТИРОВАНИЯ (mutmut v2.5.1)
+======================================================================
+Файл под мутацией: lab1/app/main.py
+Тесты:             lab1/tests/
+Всего мутантов:     129
+Убито:              111
+Выжило:             18
+Mutation Score:     86.0%
+
+======================================================================
+ВЫЖИВШИЕ МУТАНТЫ
+======================================================================
+
+--- Мутант #14 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -18,7 +18,7 @@
+     priority: Priority = Priority.medium
+     due_date: Optional[date] = None
+ 
+-    @field_validator("title")
++    @field_validator("XXtitleXX")
+     @classmethod
+     def normalize_title(cls, value: str) -> str:
+         title = value.strip()
+
+
+--- Мутант #16 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -19,7 +19,7 @@
+     due_date: Optional[date] = None
+ 
+     @field_validator("title")
+-    @classmethod
++
+     def normalize_title(cls, value: str) -> str:
+         title = value.strip()
+         if not title:
+
+
+--- Мутант #20 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -26,7 +26,7 @@
+             raise ValueError("Title must not be empty")
+         return title
+ 
+-    @field_validator("description")
++    @field_validator("XXdescriptionXX")
+     @classmethod
+     def normalize_description(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+
+
+--- Мутант #22 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -27,7 +27,7 @@
+         return title
+ 
+     @field_validator("description")
+-    @classmethod
++
+     def normalize_description(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+             return value
+
+
+--- Мутант #31 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -38,7 +38,7 @@
+ class TaskUpdate(BaseModel):
+     title: Optional[str] = Field(default=None, min_length=3, max_length=100)
+     description: Optional[str] = Field(default=None, max_length=500)
+-    priority: Optional[Priority] = None
++    priority: Optional[Priority] = ""
+     due_date: Optional[date] = None
+ 
+     @field_validator("title")
+
+
+--- Мутант #32 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -39,7 +39,7 @@
+     title: Optional[str] = Field(default=None, min_length=3, max_length=100)
+     description: Optional[str] = Field(default=None, max_length=500)
+     priority: Optional[Priority] = None
+-    due_date: Optional[date] = None
++    due_date: Optional[date] = ""
+ 
+     @field_validator("title")
+     @classmethod
+
+
+--- Мутант #33 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -41,7 +41,7 @@
+     priority: Optional[Priority] = None
+     due_date: Optional[date] = None
+ 
+-    @field_validator("title")
++    @field_validator("XXtitleXX")
+     @classmethod
+     def normalize_title(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+
+
+--- Мутант #35 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -42,7 +42,7 @@
+     due_date: Optional[date] = None
+ 
+     @field_validator("title")
+-    @classmethod
++
+     def normalize_title(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+             return value
+
+
+--- Мутант #40 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -51,7 +51,7 @@
+             raise ValueError("Title must not be empty")
+         return title
+ 
+-    @field_validator("description")
++    @field_validator("XXdescriptionXX")
+     @classmethod
+     def normalize_description(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+
+
+--- Мутант #42 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -52,7 +52,7 @@
+         return title
+ 
+     @field_validator("description")
+-    @classmethod
++
+     def normalize_description(cls, value: Optional[str]) -> Optional[str]:
+         if value is None:
+             return value
+
+
+--- Мутант #46 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -63,7 +63,7 @@
+ class Task(BaseModel):
+     id: int
+     title: str
+-    description: Optional[str] = None
++    description: Optional[str] = ""
+     priority: Priority
+     due_date: Optional[date] = None
+     completed: bool = False
+
+
+--- Мутант #47 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -65,7 +65,7 @@
+     title: str
+     description: Optional[str] = None
+     priority: Priority
+-    due_date: Optional[date] = None
++    due_date: Optional[date] = ""
+     completed: bool = False
+
+
+--- Мутант #48 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -66,7 +66,7 @@
+     description: Optional[str] = None
+     priority: Priority
+     due_date: Optional[date] = None
+-    completed: bool = False
++    completed: bool = True
+ 
+ 
+ app = FastAPI(title="Task Tracker API")
+
+
+--- Мутант #49 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -66,7 +66,7 @@
+     description: Optional[str] = None
+     priority: Priority
+     due_date: Optional[date] = None
+-    completed: bool = False
++    completed: bool = None
+ 
+ 
+ app = FastAPI(title="Task Tracker API")
+
+
+--- Мутант #50 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -69,7 +69,7 @@
+     completed: bool = False
+ 
+ 
+-app = FastAPI(title="Task Tracker API")
++app = FastAPI(title="XXTask Tracker APIXX")
+ _tasks: dict[int, Task] = {}
+ _next_id = 1
+
+
+--- Мутант #51 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -69,7 +69,7 @@
+     completed: bool = False
+ 
+ 
+-app = FastAPI(title="Task Tracker API")
++app = None
+ _tasks: dict[int, Task] = {}
+ _next_id = 1
+
+
+--- Мутант #53 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -71,7 +71,7 @@
+ 
+ app = FastAPI(title="Task Tracker API")
+ _tasks: dict[int, Task] = {}
+-_next_id = 1
++_next_id = 2
+ 
+ 
+ def _title_exists(title: str, exclude_id: Optional[int] = None) -> bool:
+
+
+--- Мутант #54 ---
+--- lab1/app/main.py
++++ lab1/app/main.py
+@@ -71,7 +71,7 @@
+ 
+ app = FastAPI(title="Task Tracker API")
+ _tasks: dict[int, Task] = {}
+-_next_id = 1
++_next_id = None
+ 
+ 
+ def _title_exists(title: str, exclude_id: Optional[int] = None) -> bool:
+
+======================================================================
+УБИТЫЕ МУТАНТЫ (IDs): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 17, 18, 19, 21, 23, 24, 25, 26, 27, 28, 29, 30, 34, 36, 37, 38, 39, 41, 43, 44, 45, 52, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129]
+======================================================================
